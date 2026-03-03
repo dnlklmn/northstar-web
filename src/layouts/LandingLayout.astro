@@ -1,0 +1,55 @@
+---
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+<Layout title={frontmatter.title}>
+  <h1>{frontmatter.title}</h1>
+
+  <p class="lede">{frontmatter.lede}</p>
+  <p class="dim">{frontmatter.tagline}</p>
+  <p>{frontmatter.intro}</p>
+
+  <hr>
+
+  <h2>What we do</h2>
+  {frontmatter.what_we_do.map((p: string) => (
+    <p class={p.startsWith('Not a') ? 'dim' : undefined}>{p}</p>
+  ))}
+
+  <hr>
+
+  <h2>Services</h2>
+  <ul class="services">
+    {frontmatter.services.map((s: { name: string; desc: string }) => (
+      <li>
+        <span class="service-name">{s.name}</span>
+        <span class="service-desc">{s.desc}</span>
+      </li>
+    ))}
+  </ul>
+
+  <hr>
+
+  <h2>How an engagement works</h2>
+  <ol class="steps">
+    {frontmatter.steps.map((step: string) => (
+      <li><span>{step}</span></li>
+    ))}
+  </ol>
+
+  <hr>
+
+  <h2>Why work with us</h2>
+  {frontmatter.why_us.map((p: string) => (
+    <p class={p.startsWith("We're selective") ? 'dim' : undefined}>{p}</p>
+  ))}
+
+  <div class="contact">
+    <p><a href={`mailto:${frontmatter.contact}`}>{frontmatter.contact}</a></p>
+  </div>
+
+  <footer>
+    <p>north star &mdash; 2026</p>
+  </footer>
+</Layout>
