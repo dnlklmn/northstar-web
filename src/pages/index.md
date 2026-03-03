@@ -23,13 +23,6 @@ services:
   - name: AI engineering stack optimization
     desc: Once success criteria exist, everything else — spend, retrieval quality, model choice — becomes optimizable against something real.
 
-steps:
-  - "Kick-off. Goals, stack overview, access setup."
-  - "Discovery. Two or three conversations going deep on each layer — evals, data, models, cost, and who owns what."
-  - "Mapping. We produce a diagram of the system and locate where the gap lives."
-  - "Readout. We present findings and a prioritized list of interventions, ranked by impact."
-  - "Deliverable. A written report with the architecture diagram, findings, and recommendations you can act on immediately."
-
 why_us:
   - "We're early, which means two things. You get our full attention — this isn't a
     scaled offering where you're handed to a junior. And the work directly shapes what we
