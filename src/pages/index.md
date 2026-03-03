@@ -23,14 +23,9 @@ services:
   - name: AI engineering stack optimization
     desc: Once success criteria exist, everything else — spend, retrieval quality, model choice — becomes optimizable against something real.
 
+# TODO (Nando): this whole section comes off as really cocky to me, I want to make sure
+# the tone is different before we publish anything
 why_us:
-  - "We're early, which means two things. You get our full attention — this isn't a
-    scaled offering where you're handed to a junior. And the work directly shapes what we
-    build. Companies we work with now will have direct input into tooling that eventually
-    automates what we're currently doing by hand."
-  - "We're selective. We want to work with companies doing interesting things in
-    production — not proof of concepts, not greenfield. If your AI system is live and
-    you're not confident you'd know if it got worse, that's the conversation."
 
 contact: hello@biene.club
 ---
