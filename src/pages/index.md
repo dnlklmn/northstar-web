@@ -37,7 +37,7 @@ services:
 
 why_us:
   - name: We're builders
-  - We're building tooling to help companies improve, and we've probably faced similar challenges as you have on your road to production
+  - desc: We're building tooling to help companies improve, and we've probably faced similar challenges as you have on your road to production
 
 
 contact: hello@biene.club
