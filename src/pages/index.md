@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/LandingLayout.astro
-title: "* north star"
+title: "north star"
 lede: 
   - "Guaranteeing good results with AI systems is hard. "
   - "We'll help you get there."
